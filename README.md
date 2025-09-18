@@ -26,29 +26,40 @@ It provides:
 ## 🚀 Project Structure
 QuantStrategySimulator/
 ├── data/                   # Raw + processed financial datasets (CSV, API pulls)
+
 │   ├── raw/                # Original downloaded data
+
 │   └── processed/          # Cleaned data for simulations
+
 │
 ├── notebooks/              # Jupyter notebooks for exploration & prototyping
 │   ├── data_exploration.ipynb
+
 │   ├── strategy_backtest.ipynb
+
 │   └── risk_analysis.ipynb
 │
 ├── src/                    # Core source code (modular Python scripts)
 │   ├── __init__.py
-│   ├── data_loader.py      # Load & preprocess data
-│   ├── strategy.py         # Trading strategy logic
-│   ├── backtester.py       # Backtesting engine
+
+│   ├── data_loader.py   # Load & preprocess data
+│   ├── strategy.py    
+     # Trading strategy logic
+│   ├── backtester.py  
+     # Backtesting engine
 │   ├── risk.py             # Risk metrics (Sharpe ratio, drawdowns, VaR)
 │   └── utils.py            # Helper functions (plotting, logging, etc.)
 │
 ├── results/                # Simulation outputs
 │   ├── performance_charts/ # Equity curves, returns distribution, heatmaps
+
 │   └── logs/               # Backtest logs & config outputs
 │
 ├── docs/                   # Documentation & explanations
 │   ├── architecture.md     # System design & module explanation
+
 │   ├── strategy_notes.md   # Description of strategies tested
+
 │   └── references.md       # Links to papers, articles, textbooks (e.g., Hull)
 │
 ├── tests/                  # Unit tests for reliability
