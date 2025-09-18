@@ -43,19 +43,23 @@ QuantStrategySimulator/
 │   ├── __init__.py
 
 │   ├── data_loader.py   # Load & preprocess data
-│   ├── strategy.py    
-     # Trading strategy logic
-│   ├── backtester.py  
-     # Backtesting engine
+
+│   ├── strategy.py    # Trading strategy logic
+
+│   ├── backtester.py   # Backtesting engine
+
 │   ├── risk.py             # Risk metrics (Sharpe ratio, drawdowns, VaR)
+
 │   └── utils.py            # Helper functions (plotting, logging, etc.)
 │
 ├── results/                # Simulation outputs
+
 │   ├── performance_charts/ # Equity curves, returns distribution, heatmaps
 
 │   └── logs/               # Backtest logs & config outputs
 │
 ├── docs/                   # Documentation & explanations
+
 │   ├── architecture.md     # System design & module explanation
 
 │   ├── strategy_notes.md   # Description of strategies tested
